@@ -12,14 +12,27 @@ local plugins = {
         layz = false,
     },
     {
-        "github/copilot.vim",
+        "zbirenbaum/copilot.lua",
         cmd = "Copilot",
         event = "InsertEnter",
-        config = function()
-            require("copilot").setup({})
+        opts = {
+            panel = {
+                keymap = {
+                    open = "<M-o>",
+                },
+            },
+            suggestion = {
+                auto_trigger = true,
+                keymap = {
+                    accept = "<M-CR>",
+                },
+            },
+        },
+        config = function(_, opts)
+          require("copilot").setup(opts)
         end,
     },
-    -- LSP & DAP 
+    -- LSP & DAP
     {
         "williamboman/mason.nvim",
         opts = {
