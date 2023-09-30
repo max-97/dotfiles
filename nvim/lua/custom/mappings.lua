@@ -65,4 +65,11 @@ M.undotree = {
         ["<leader>u"] = { "<cmd>UndotreeToggle<CR>", "Toggle undotree" }
     }
 }
+
+M.lazygit = {
+    plugin = true,
+    n = {
+        ["<leader>lg"] = { "<cmd>LazyGit<CR>", "Open lazygit" }
+    }
+}
 return M

@@ -158,6 +158,16 @@ local plugins = {
         config = function ()
             require("leap").add_default_mappings()
         end,
+    },
+    {
+        "kdheepak/lazygit.nvim",
+        cmd = "LazyGit",
+        depependencies = {
+            "nvim-lua/plenary.nvim"
+        },
+        init = function ()
+            require("core.utils").load_mappings("lazygit")
+        end,
     }
 }
 return plugins
