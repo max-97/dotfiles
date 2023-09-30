@@ -9,3 +9,4 @@ ln -sf $dotfiles_dir/awesome ~/.config/awesome
 ln -sf $dotfiles_dir/.zshrc ~/.zshrc
 ln -sf $dotfiles_dir/.p10k.zsh ~/.p10k.zsh
 ln -sf $dotfiles_dir/.tmux ~/.tmux
+ln -sf $dorfiels_dir/tmux ~/.config/tmux
