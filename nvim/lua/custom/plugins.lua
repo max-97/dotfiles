@@ -135,13 +135,10 @@ local plugins = {
     -- my setup
     {
         'mbbill/undotree',
-        keys = {
-            { "<leader>u", mode = "n", desc = "Toggle undotree" },
-        },
+        cmd = "UndotreeToggle",
         init = function ()
             require("core.utils").load_mappings("undotree")
         end,
-        lazy = false,
     },
     {
         "tpope/vim-repeat",
