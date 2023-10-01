@@ -6,7 +6,7 @@ dotfiles_dir=~/.dotfiles
 ### Install packages and programs
 sudo apt update
 
-sudo apt install zsh tmux ripgrep -y
+sudo apt install build-essential zsh tmux ripgrep python3 python3-venv -y
 
 # Neovim 0.9
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
