@@ -4,13 +4,15 @@
 dotfiles_dir=~/.dotfiles
 
 ### Install packages and programs
-
-# Neovim repo
-sudo add-apt-repository ppa:neovim-ppa/stable -y
-
 sudo apt update
 
-sudo apt install zsh neovim tmux ripgrep -y
+sudo apt install zsh tmux ripgrep -y
+
+# Neovim 0.9
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+mv ./nvim.appimage nvim
+sudo mv ./nvim /usr/bin/nvim
 
 # NvChad
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
