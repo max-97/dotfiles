@@ -105,7 +105,7 @@ local plugins = {
     {
         "mfussenegger/nvim-dap-python",
         ft = "python",
-        depependencies = {
+        dependencies = {
             "mfussenegger/nvim-dap",
             "rcarriga/nvim-dap-ui",
         },
